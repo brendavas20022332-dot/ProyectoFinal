@@ -1,0 +1,480 @@
+ERROR - 2026-11-04 04:14:05 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(10)
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('10')
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(10)
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('10')
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(10)
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('10')
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-11-04 04:14:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido. 
+[Method: GET, Route: reportes/imprimir/10]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reportes_disciplinarios`.*, `est`.`nombres` as `est_nombres`, `est`.`apellidos` as `est_apellidos`, `est`.`genero` as `est_genero`, `est`.`fecha_nacimiento` as `est_fecha_nacimiento`, `g`.`nombre_grado`, `sec`.`nombre_seccion`, `gs`.`ciclo_lectivo`, `doc`.`nombre` as `doc_nombre`, `doc`.`apellido` as `doc_apellido`, `doc`.`grado_encargado` as `doc_grado_encargado`, `tf`.`nombre` as `falta_nombre`, `tf`.`gravedad` as `falta_gravedad`, `tf`.`descripcion` as `falta_descripcion`, `er`.`nombre` as `estado_nombre`, `enc`.`nombre` as `enc_nombre`, `enc`.`apellido` as `enc_apellido`, `enc`.`parentesco` as `enc_parentesco`, `enc`.`telefono` as `enc_telefono`
+FROM `reportes_disciplinarios`
+LEFT JOIN `estudiantes` `est` ON `est`.`estudiantes_id` = `reportes_disciplinarios`.`estudiante_id`
+LEFT JOIN `encargado` `enc` ON `enc`.`encargado_id` = `est`.`encargado_id`
+LEFT JOIN `grados_secciones` `gs` ON `gs`.`grado_seccion_id` = `est`.`grado_seccion_id`
+LEFT JOIN `grados` `g` ON `g`.`grado_id` = `gs`.`grado_id`
+LEFT JOIN `secciones` `sec` ON `sec`.`seccion_id` = `gs`.`seccion_id`
+LEFT JOIN `docentes` `doc` ON `doc`.`docente_id` = `reportes_disciplinarios`.`docente_id`
+LEFT JOIN `tipos_de_falta` `tf` ON `tf`.`tipo_falta_id` = `reportes_disciplinarios`.`tipo_falta_id`
+LEFT JOIN `estado_reporte` `er` ON `er`.`estado_id` = `reportes_disciplinarios`.`estado_id`
+WHERE `reportes_disciplinarios`.`reporte_id` = :reportes_disciplinarios.reporte_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(10)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('10')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-04 04:14:05 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(10)
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('10')
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(10)
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('10')
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(10)
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('10')
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-11-04 04:14:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido. 
+[Method: GET, Route: reportes/descargar-word/10]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reportes_disciplinarios`.*, `est`.`nombres` as `est_nombres`, `est`.`apellidos` as `est_apellidos`, `est`.`genero` as `est_genero`, `est`.`fecha_nacimiento` as `est_fecha_nacimiento`, `g`.`nombre_grado`, `sec`.`nombre_seccion`, `gs`.`ciclo_lectivo`, `doc`.`nombre` as `doc_nombre`, `doc`.`apellido` as `doc_apellido`, `doc`.`grado_encargado` as `doc_grado_encargado`, `tf`.`nombre` as `falta_nombre`, `tf`.`gravedad` as `falta_gravedad`, `tf`.`descripcion` as `falta_descripcion`, `er`.`nombre` as `estado_nombre`, `enc`.`nombre` as `enc_nombre`, `enc`.`apellido` as `enc_apellido`, `enc`.`parentesco` as `enc_parentesco`, `enc`.`telefono` as `enc_telefono`
+FROM `reportes_disciplinarios`
+LEFT JOIN `estudiantes` `est` ON `est`.`estudiantes_id` = `reportes_disciplinarios`.`estudiante_id`
+LEFT JOIN `encargado` `enc` ON `enc`.`encargado_id` = `est`.`encargado_id`
+LEFT JOIN `grados_secciones` `gs` ON `gs`.`grado_seccion_id` = `est`.`grado_seccion_id`
+LEFT JOIN `grados` `g` ON `g`.`grado_id` = `gs`.`grado_id`
+LEFT JOIN `secciones` `sec` ON `sec`.`seccion_id` = `gs`.`seccion_id`
+LEFT JOIN `docentes` `doc` ON `doc`.`docente_id` = `reportes_disciplinarios`.`docente_id`
+LEFT JOIN `tipos_de_falta` `tf` ON `tf`.`tipo_falta_id` = `reportes_disciplinarios`.`tipo_falta_id`
+LEFT JOIN `estado_reporte` `er` ON `er`.`estado_id` = `reportes_disciplinarios`.`estado_id`
+WHERE `reportes_disciplinarios`.`reporte_id` = :reportes_disciplinarios.reporte_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(10)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('10')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-04 04:14:06 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(11)
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('11')
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(11)
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('11')
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(11)
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('11')
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-11-04 04:14:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido. 
+[Method: GET, Route: reportes/imprimir/11]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reportes_disciplinarios`.*, `est`.`nombres` as `est_nombres`, `est`.`apellidos` as `est_apellidos`, `est`.`genero` as `est_genero`, `est`.`fecha_nacimiento` as `est_fecha_nacimiento`, `g`.`nombre_grado`, `sec`.`nombre_seccion`, `gs`.`ciclo_lectivo`, `doc`.`nombre` as `doc_nombre`, `doc`.`apellido` as `doc_apellido`, `doc`.`grado_encargado` as `doc_grado_encargado`, `tf`.`nombre` as `falta_nombre`, `tf`.`gravedad` as `falta_gravedad`, `tf`.`descripcion` as `falta_descripcion`, `er`.`nombre` as `estado_nombre`, `enc`.`nombre` as `enc_nombre`, `enc`.`apellido` as `enc_apellido`, `enc`.`parentesco` as `enc_parentesco`, `enc`.`telefono` as `enc_telefono`
+FROM `reportes_disciplinarios`
+LEFT JOIN `estudiantes` `est` ON `est`.`estudiantes_id` = `reportes_disciplinarios`.`estudiante_id`
+LEFT JOIN `encargado` `enc` ON `enc`.`encargado_id` = `est`.`encargado_id`
+LEFT JOIN `grados_secciones` `gs` ON `gs`.`grado_seccion_id` = `est`.`grado_seccion_id`
+LEFT JOIN `grados` `g` ON `g`.`grado_id` = `gs`.`grado_id`
+LEFT JOIN `secciones` `sec` ON `sec`.`seccion_id` = `gs`.`seccion_id`
+LEFT JOIN `docentes` `doc` ON `doc`.`docente_id` = `reportes_disciplinarios`.`docente_id`
+LEFT JOIN `tipos_de_falta` `tf` ON `tf`.`tipo_falta_id` = `reportes_disciplinarios`.`tipo_falta_id`
+LEFT JOIN `estado_reporte` `er` ON `er`.`estado_id` = `reportes_disciplinarios`.`estado_id`
+WHERE `reportes_disciplinarios`.`reporte_id` = :reportes_disciplinarios.reporte_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(11)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('11')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-04 04:14:06 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(11)
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('11')
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(11)
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('11')
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(11)
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('11')
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-11-04 04:14:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido. 
+[Method: GET, Route: reportes/descargar-word/11]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reportes_disciplinarios`.*, `est`.`nombres` as `est_nombres`, `est`.`apellidos` as `est_apellidos`, `est`.`genero` as `est_genero`, `est`.`fecha_nacimiento` as `est_fecha_nacimiento`, `g`.`nombre_grado`, `sec`.`nombre_seccion`, `gs`.`ciclo_lectivo`, `doc`.`nombre` as `doc_nombre`, `doc`.`apellido` as `doc_apellido`, `doc`.`grado_encargado` as `doc_grado_encargado`, `tf`.`nombre` as `falta_nombre`, `tf`.`gravedad` as `falta_gravedad`, `tf`.`descripcion` as `falta_descripcion`, `er`.`nombre` as `estado_nombre`, `enc`.`nombre` as `enc_nombre`, `enc`.`apellido` as `enc_apellido`, `enc`.`parentesco` as `enc_parentesco`, `enc`.`telefono` as `enc_telefono`
+FROM `reportes_disciplinarios`
+LEFT JOIN `estudiantes` `est` ON `est`.`estudiantes_id` = `reportes_disciplinarios`.`estudiante_id`
+LEFT JOIN `encargado` `enc` ON `enc`.`encargado_id` = `est`.`encargado_id`
+LEFT JOIN `grados_secciones` `gs` ON `gs`.`grado_seccion_id` = `est`.`grado_seccion_id`
+LEFT JOIN `grados` `g` ON `g`.`grado_id` = `gs`.`grado_id`
+LEFT JOIN `secciones` `sec` ON `sec`.`seccion_id` = `gs`.`seccion_id`
+LEFT JOIN `docentes` `doc` ON `doc`.`docente_id` = `reportes_disciplinarios`.`docente_id`
+LEFT JOIN `tipos_de_falta` `tf` ON `tf`.`tipo_falta_id` = `reportes_disciplinarios`.`tipo_falta_id`
+LEFT JOIN `estado_reporte` `er` ON `er`.`estado_id` = `reportes_disciplinarios`.`estado_id`
+WHERE `reportes_disciplinarios`.`reporte_id` = :reportes_disciplinarios.reporte_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(11)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('11')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-04 04:14:06 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(12)
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('12')
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(12)
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('12')
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(12)
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('12')
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-11-04 04:14:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido. 
+[Method: GET, Route: reportes/imprimir/12]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reportes_disciplinarios`.*, `est`.`nombres` as `est_nombres`, `est`.`apellidos` as `est_apellidos`, `est`.`genero` as `est_genero`, `est`.`fecha_nacimiento` as `est_fecha_nacimiento`, `g`.`nombre_grado`, `sec`.`nombre_seccion`, `gs`.`ciclo_lectivo`, `doc`.`nombre` as `doc_nombre`, `doc`.`apellido` as `doc_apellido`, `doc`.`grado_encargado` as `doc_grado_encargado`, `tf`.`nombre` as `falta_nombre`, `tf`.`gravedad` as `falta_gravedad`, `tf`.`descripcion` as `falta_descripcion`, `er`.`nombre` as `estado_nombre`, `enc`.`nombre` as `enc_nombre`, `enc`.`apellido` as `enc_apellido`, `enc`.`parentesco` as `enc_parentesco`, `enc`.`telefono` as `enc_telefono`
+FROM `reportes_disciplinarios`
+LEFT JOIN `estudiantes` `est` ON `est`.`estudiantes_id` = `reportes_disciplinarios`.`estudiante_id`
+LEFT JOIN `encargado` `enc` ON `enc`.`encargado_id` = `est`.`encargado_id`
+LEFT JOIN `grados_secciones` `gs` ON `gs`.`grado_seccion_id` = `est`.`grado_seccion_id`
+LEFT JOIN `grados` `g` ON `g`.`grado_id` = `gs`.`grado_id`
+LEFT JOIN `secciones` `sec` ON `sec`.`seccion_id` = `gs`.`seccion_id`
+LEFT JOIN `docentes` `doc` ON `doc`.`docente_id` = `reportes_disciplinarios`.`docente_id`
+LEFT JOIN `tipos_de_falta` `tf` ON `tf`.`tipo_falta_id` = `reportes_disciplinarios`.`tipo_falta_id`
+LEFT JOIN `estado_reporte` `er` ON `er`.`estado_id` = `reportes_disciplinarios`.`estado_id`
+WHERE `reportes_disciplinarios`.`reporte_id` = :reportes_disciplinarios.reporte_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\ReportesControllers.php(130): App\Models\ReportesModel->obtenerReportePorId(12)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->imprimir('12')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-11-04 04:14:06 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 200)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(12)
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('12')
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('sql302.infinity...', 'if0_43350060', Object(SensitiveParameterValue), 'if0_43350060_di...', 3306, '', 0)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(12)
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('12')
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido.  in C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#3 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\app\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(12)
+#7 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('12')
+#8 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+#9 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\bd_proyecto\sistema_disciplinario\codeigniter4-framework-a1f129d\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-11-04 04:14:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for sql302.infinityfree.com failed: Host desconocido. 
+[Method: GET, Route: reportes/descargar-word/12]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `reportes_disciplinarios`.*, `est`.`nombres` as `est_nombres`, `est`.`apellidos` as `est_apellidos`, `est`.`genero` as `est_genero`, `est`.`fecha_nacimiento` as `est_fecha_nacimiento`, `g`.`nombre_grado`, `sec`.`nombre_seccion`, `gs`.`ciclo_lectivo`, `doc`.`nombre` as `doc_nombre`, `doc`.`apellido` as `doc_apellido`, `doc`.`grado_encargado` as `doc_grado_encargado`, `tf`.`nombre` as `falta_nombre`, `tf`.`gravedad` as `falta_gravedad`, `tf`.`descripcion` as `falta_descripcion`, `er`.`nombre` as `estado_nombre`, `enc`.`nombre` as `enc_nombre`, `enc`.`apellido` as `enc_apellido`, `enc`.`parentesco` as `enc_parentesco`, `enc`.`telefono` as `enc_telefono`
+FROM `reportes_disciplinarios`
+LEFT JOIN `estudiantes` `est` ON `est`.`estudiantes_id` = `reportes_disciplinarios`.`estudiante_id`
+LEFT JOIN `encargado` `enc` ON `enc`.`encargado_id` = `est`.`encargado_id`
+LEFT JOIN `grados_secciones` `gs` ON `gs`.`grado_seccion_id` = `est`.`grado_seccion_id`
+LEFT JOIN `grados` `g` ON `g`.`grado_id` = `gs`.`grado_id`
+LEFT JOIN `secciones` `sec` ON `sec`.`seccion_id` = `gs`.`seccion_id`
+LEFT JOIN `docentes` `doc` ON `doc`.`docente_id` = `reportes_disciplinarios`.`docente_id`
+LEFT JOIN `tipos_de_falta` `tf` ON `tf`.`tipo_falta_id` = `reportes_disciplinarios`.`tipo_falta_id`
+LEFT JOIN `estado_reporte` `er` ON `er`.`estado_id` = `reportes_disciplinarios`.`estado_id`
+WHERE `reportes_disciplinarios`.`reporte_id` = :reportes_disciplinarios.reporte_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ReportesModel.php(89): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\ReportesControllers.php(146): App\Models\ReportesModel->obtenerReportePorId(12)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->descargarWord('12')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,54 @@
+CRITICAL - 2026-10-21 02:02:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Estudiantes.index"
+[Method: GET, Route: estudiantes]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Estudiantes.index')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('Estudiantes.index', [], true)
+ 3 APPPATH\Controllers\EstudiantesControllers.php(14): view('Estudiantes.index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\EstudiantesControllers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudiantesControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 02:19:57 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: reportes/crear]
+in APPPATH\Views\reportes_crear.php on line 85.
+ 1 APPPATH\Views\reportes_crear.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\bd_proyecto\\sistema_disciplinario\\codeigniter4-framework-a1f129d\\app\\Views\\reportes_crear.php', 85)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\bd_proyecto\\sistema_disciplinario\\codeigniter4-framework-a1f129d\\app\\Views\\reportes_crear.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('reportes_crear', [], true)
+ 5 APPPATH\Controllers\ReportesControllers.php(59): view('reportes_crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 02:20:06 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: reportes/crear]
+in APPPATH\Views\reportes_crear.php on line 85.
+ 1 APPPATH\Views\reportes_crear.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\bd_proyecto\\sistema_disciplinario\\codeigniter4-framework-a1f129d\\app\\Views\\reportes_crear.php', 85)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\bd_proyecto\\sistema_disciplinario\\codeigniter4-framework-a1f129d\\app\\Views\\reportes_crear.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('reportes_crear', [], true)
+ 5 APPPATH\Controllers\ReportesControllers.php(59): view('reportes_crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 02:20:21 --> ErrorException: Undefined property: CodeIgniter\View\View::$request
+[Method: GET, Route: reportes/crear]
+in APPPATH\Views\reportes_crear.php on line 85.
+ 1 APPPATH\Views\reportes_crear.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\bd_proyecto\\sistema_disciplinario\\codeigniter4-framework-a1f129d\\app\\Views\\reportes_crear.php', 85)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\bd_proyecto\\sistema_disciplinario\\codeigniter4-framework-a1f129d\\app\\Views\\reportes_crear.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('reportes_crear', [], true)
+ 5 APPPATH\Controllers\ReportesControllers.php(59): view('reportes_crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ReportesControllers->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportesControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
